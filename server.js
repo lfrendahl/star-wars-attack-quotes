@@ -8,7 +8,7 @@ const MongoClient = require('mongodb').MongoClient
 // ========================
 // Link to Database
 // ========================
-MongoClient.connect('mongodb+srv://lavasaurus:lavavolcano@cluster0.qswu9.mongodb.net/?retryWrites=true&w=majority', { useUnifiedTopology: true })
+MongoClient.connect('mongodb+srv://<username><password>@cluster0.qswu9.mongodb.net/?retryWrites=true&w=majority', { useUnifiedTopology: true })
    .then(client => {
         console.log('Connected to Database')
          const db = client.db('starwars-quote-repo')
